@@ -75,7 +75,6 @@ All of this information about Authentication flow is subject to change, more tha
 The following documents will be produced before development begins 
 - Project overview (this file)
 - System Class Diagram
-- Design Class Diagram
 - Use Case Diagram 
 - Use Case Description 
 - Wireframes 
