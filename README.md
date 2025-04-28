@@ -1,8 +1,34 @@
 # Functionality
-
 ---
+## Hormones 
 
+## Levels 
 
+## Authentication
+our use cases in terms of Authetication are as follows: 
+Login with PIN
+Register user
+Recovery with phrase
+
+please see Encryption and Cryptography for the authentication flow
+## Cryptography
+Our Cryptography use cases which Authentication
+Encrypt User
+Encrypt Phrase
+Encrypt Pin
+
+Decrypt Pin
+Decrypt Phrase
+Decrypt User
+
+please see Encryption and Cryptography for the authentication flow
+
+## Safety
+Our safety use cases designed for users who unable to be open about being on hormones:
+Quick Exit (immediately kills the application and opens the default web browser)
+Discrete mode (makes the app not look like a hormone tracking application)
+Self Destruct (Deletes all user data)
+Silent Mode (No Push Notification)
 # Encryption and Cryptography standard
 
 ---
@@ -38,4 +64,9 @@ All of this information about Authentication flow is subject to change, more tha
 
 ---
 Our milestones would be as follows : 
-- Documentation Complete. The completion of documentation means that we can start writing code and 
+- Documentation Complete. The completion of documentation means that we can start writing code and developing this application and hopefully delivering to users 
+- Authentication Proof of Concept(POC). A working proof of concept which shows how our authentication works. 
+- General MVP. The delivery of our MVP will mean that this process has amounted to more than just documentation and deliberation. The delivery of an MVP also gives our potential users a look into our 
+- UX/UI refurb. The refurbishment of the user interface and general user experience. 
+- Closed Alpha Build, A closed alpha where people will be testing an android build of the application. Selecting Users who will be testing the application will be deliberated on after the UI/UX refurb is completed.
+- Delivery, Delivery will be when the application is ready for users 
