@@ -6,44 +6,44 @@
 
 ## Authentication
 our use cases in terms of Authetication are as follows: 
-Login with PIN
-Register user
-Recovery with phrase
+- Login with PIN
+- Register user
+- Recovery with phrase
 
 please see Encryption and Cryptography for the authentication flow
 ## Cryptography
 Our Cryptography use cases which Authentication
-Encrypt User
-Encrypt Phrase
-Encrypt Pin
+- Encrypt User
+- Encrypt Phrase
+- Encrypt Pin
 
-Decrypt Pin
-Decrypt Phrase
-Decrypt User
+- Decrypt Pin
+- Decrypt Phrase
+- Decrypt User
 
 please see Encryption and Cryptography for the authentication flow
 
 ## Safety
-Our safety use cases designed for users who unable to be open about being on hormones:
-Quick Exit (immediately kills the application and opens the default web browser)
-Discrete mode (makes the app not look like a hormone tracking application)
-Self Destruct (Deletes all user data)
-Silent Mode (No Push Notification)
+- Our safety use cases designed for users who unable to be open about being on hormones:
+- Quick Exit (immediately kills the application and opens the default web browser)
+- Discrete mode (makes the app not look like a hormone tracking application)
+- Self Destruct (Deletes all user data)
+- Silent Mode (No Push Notification)
 # Encryption and Cryptography standard
 
 ---
 In terms of cryptography I plan to use the HMACSHA512 and a BIP39 Mnemonic Phrase. The account creation flow would look something like the following (subject to change):
-createAccount() -> UserID: GUID/UUID
-GeneratePhrase(UserID) -> Phrase: BIP39 Phrase
-CreateUser(UserID, Phrase) -> User
-HashUser(User, Phrase) -> Encrypts Everything not a single piece of userdata bar the Application pin and recovery phrase is stored in plaintext.
-HashPhrase(Phrase, Pin) -> Uses the pin and IMEI number to hash the phrase
-HashPin(Pin, HashedPhrase) -> Hashes the application pin using the hash of the phrase as a key
+- createAccount() -> UserID: GUID/UUID
+- GeneratePhrase(UserID) -> Phrase: BIP39 Phrase
+- CreateUser(UserID, Phrase) -> User
+- HashUser(User, Phrase) -> Encrypts Everything not a single piece of userdata bar the Application pin and recovery phrase is stored in plaintext.
+- HashPhrase(Phrase, Pin) -> Uses the pin and IMEI number to hash the phrase
+- HashPin(Pin, HashedPhrase) -> Hashes the application pin using the hash of the phrase as a key
 
 The flow for logging in and authenticating a user would look something like this (subject to change):
-InputPin() -> Queries user for pin
-AuthenticatesPin() -> Checks if pin is correct
-DecryptData(Pin) -> Uses the pin to decrypt the phrase which decrypts the user
+- InputPin() -> Queries user for pin
+- AuthenticatesPin() -> Checks if pin is correct
+- DecryptData(Pin) -> Uses the pin to decrypt the phrase which decrypts the user
 
 This encrypted data would be stored in Zustand, meaning that we would have our encrypted data stored in temporarily which if there is no additions the data in the Zustand store would be deleted and wouldn't be accessible. If changes are made the temporary user object is encrypted and replaces the Data which would normally be in the store.
 
