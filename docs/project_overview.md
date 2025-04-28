@@ -26,7 +26,7 @@
 - Login with PIN
 - Register user
 - Recovery with phrase
-<sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
+##### <sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
 
 ### Cryptography
 - Encrypt User
@@ -37,7 +37,7 @@
 - Decrypt Phrase
 - Decrypt User
 
-<sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
+##### <sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
 
 ### Safety
 - Quick Exit (immediately kills the application and opens the default web browser)
