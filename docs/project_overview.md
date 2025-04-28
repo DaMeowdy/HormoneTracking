@@ -2,8 +2,17 @@
 ### Hormones 
 
 #### Doses 
+- Generate next n doses 
+- delete dose
+- Remind to take dose
+- Track taken doses 
+- Track untaken doses
 
 #### Dosages 
+
+- Add Dosage
+- Edit Dosage
+- Delete Dosage
 
 ### Levels 
 - Add test  
@@ -64,6 +73,7 @@ All of this information about Authentication flow is subject to change, more tha
 
 ## Documentation
 The following documents will be produced before development begins 
+- Project overview (this file)
 - System Class Diagram
 - Design Class Diagram
 - Use Case Diagram 
