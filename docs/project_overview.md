@@ -45,6 +45,11 @@
 - Self Destruct (Deletes all user data)
 - Silent Mode (No Push Notification)
 
+### Reports 
+- Generate reports based on weekly, monthly or yearly data
+- Store reports in an encrypted format 
+- have reports easily accessible at all times 
+
 ## Encryption and Cryptography standard
 
 In terms of cryptography I plan to use the HMACSHA512 and a BIP39 Mnemonic Phrase. The account creation flow would look something like the following (subject to change):
