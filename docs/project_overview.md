@@ -1,5 +1,8 @@
+# Hormone Tracker (Name is subject to change)
+
+Hormone Tracker or HTrack is a react native application which helps Transgender individuals to take their hormones and blockers and miss less doses. User safety and data security will be heavily baked in as the product of undertaking this project is an open source application that can be used by anyone, anywhere who needs to track their hormone doses and levels. Future goals include adding a system for people to put up safe pharmacies and bathrooms and peer review them but this feature will more than likely be added either post-launch or late into the development phase.
+
 ## Functionality
-### Hormones 
 
 #### Doses 
 - Generate next n doses 
@@ -14,7 +17,7 @@
 - Edit Dosage
 - Delete Dosage
 
-### Levels 
+#### Levels 
 - Add test  
 - Add test results
 - Graph levels 
@@ -28,7 +31,7 @@
 - Recovery with phrase
 ### <sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
 
-### Cryptography
+#### Cryptography
 - Encrypt User
 - Encrypt Phrase
 - Encrypt Pin
@@ -39,13 +42,14 @@
 
 ### <sup><sub>please see Encryption and Cryptography for the authentication flow</sub></sup>
 
-### Safety
+#### Safety
 - Quick Exit (immediately kills the application and opens the default web browser)
 - Discrete mode (makes the app not look like a hormone tracking application)
 - Self Destruct (Deletes all user data)
 - Silent Mode (No Push Notification)
 
-### Reports 
+
+#### Reports 
 - Generate reports based on weekly, monthly or yearly data
 - Store reports in an encrypted format 
 - have reports easily accessible at all times 
