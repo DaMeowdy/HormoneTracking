@@ -25,7 +25,7 @@ Hormone Tracker or HTrack is a react native application which helps Transgender 
 - Update test results 
 - Delete tests 
 
-### Authentication
+#### Authentication
 - Login with PIN
 - Register user
 - Recovery with phrase
