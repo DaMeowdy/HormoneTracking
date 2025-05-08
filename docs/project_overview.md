@@ -85,10 +85,6 @@ The following documents will be produced before development begins
 - Project overview (this file)
 - System Class Diagram
 - Use Case Diagram 
-- Use Case Description 
-- Wireframes 
-- Personas
-- Security threat model
 
 ## Goals 
 - Complete development documention
