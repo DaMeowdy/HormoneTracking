@@ -5,7 +5,7 @@ export const Navbar:React.FC = () => {
     <div className="w-full bg-blue-400 flex justify-center">
       <ul className="flex w-full justify-center h-full">
         {Links.map((item)=> {return (
-          <li className="border-l-4 py-4 px-2 h-full border-x-blue-800 last:border-r-4"><img className="invert h-fit" src={item.image} alt={item.name} /></li>
+          <li className="border-l-4 py-4 px-2 h-full border-x-blue-800 last:border-r-4"><a href={item.href}><img className="invert h-fit" src={item.image} alt={item.name} /></a></li>
         )})}
       </ul>
     </div>
